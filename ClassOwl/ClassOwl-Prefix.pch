@@ -1,0 +1,36 @@
+//
+// Prefix header for all source files of the 'ClassOwl' target in the 'ClassOwl' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreText/CoreText.h>
+    #import <QuartzCore/QuartzCore.h>
+
+    #import "NSString+Additions.h"
+    #import "NSArray+Additions.h"
+    #import "NSDictionary+Additions.h"
+    #import "NSDate+Additions.h"
+    #import "NSNotificationCenter+Additions.h"
+
+    #import "UIColor+Additions.h"
+    #import "UIButton+Additions.h"
+    #import "UIView+Additions.h"
+    #import "UIScrollView+Additions.h"
+    #import "UIDevice+Additions.h"
+    #import "UIApplication+Additions.h"
+
+    #define degreesToRadians(x)             (M_PI * (x) / 180.0)
+    #define radiansToDegrees(_ANGLE_)       (((_ANGLE_) / M_PI) * 180.0f)
+
+#endif
+
+
+
